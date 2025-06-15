@@ -4,6 +4,8 @@ Your personal assistant that helps you make investment decisions
 ## 📌 Description
 StockSenti is a sentiment-driven stock analysis tool that uses machine learning models trained on financial news to deliver market predictions and relevant news insights.
 
+## 🔗 Link
+stock-senti.vercel.app
 ---
 
 ## Table of Contents
