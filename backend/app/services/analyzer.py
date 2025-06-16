@@ -9,7 +9,9 @@ class NewsAnalyzer:
     def __init__(self, api_key: str):
         self.news_client = AlphaVantageNews(api_key)
 
-    def analyze_todays_news(self, tickers: list,days_ago:int,topics:list,limit:int) -> List[NewsArticle]:
+    def analyze_todays_news(
+        self, tickers: list, days_ago: int, topics: list, limit: int
+    ) -> List[NewsArticle]:
         # Fetch news
         raw_news = self.news_client.fetch_news(
             tickers=tickers,
@@ -17,13 +19,13 @@ class NewsAnalyzer:
             days_ago=days_ago,
             limit=limit,
         )
-        print(
-            "Fetched raw news:", raw_news
-        )  # Debugging line to show fetched news articles
+        # print("Fetched raw news:", raw_news)
         # Process each article
         analyzed_articles = []
         for article in raw_news:
-            print("Processing article:", article)  # Add this line
+            # print("Processing article:", article)  
+            
+            # TODO implement bert here
             sentiment = {
                 "sentiment": "positive",
                 "confidence": 0.99,

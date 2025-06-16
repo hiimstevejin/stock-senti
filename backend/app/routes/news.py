@@ -12,7 +12,7 @@ def analyze_market():
     print("analyze_market endpoint called")  # Add this line
     tickers = request.args.get("tickers", "GOOG").split(",")
     analyzer = NewsAnalyzer(current_app.config["NEWS_FETCH_KEY"])
-    articles = analyzer.analyze_todays_news(tickers=None, days_ago=7,topics=None,limit=5)
+    articles = analyzer.analyze_todays_news(tickers=tickers, days_ago=7,topics=None,limit=5)
 
     # Save to database
     db.session.bulk_save_objects(articles)
