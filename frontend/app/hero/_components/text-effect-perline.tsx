@@ -1,4 +1,4 @@
-import TextEffect from "../motion-primitives/text-effect";
+import TextEffect from "./text-effect";
 
 export function TextEffectPerLine({ children }: { children: string }) {
   return (
