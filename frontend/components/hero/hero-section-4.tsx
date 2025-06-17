@@ -23,7 +23,7 @@ export function HeroSection() {
                 </h1>
                 <TextEffectPerLine>
                   {
-                    "SignalFeed reads the news sentiment.\nYou read the charts.\nNow trade in sync."
+                    "SignalFeed reads the news.\nYou read the charts.\nNow trade in sync."
                   }
                 </TextEffectPerLine>
                 <div className="mt-12 flex flex-col items-center justify-center gap-2 sm:flex-row lg:justify-start">
