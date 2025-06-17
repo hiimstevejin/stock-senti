@@ -2,6 +2,30 @@
 // It describes the shape of the data, and what data type each property should accept.
 // For simplicity of teaching, we're manually defining these types.
 // However, these types are generated automatically if you're using an ORM such as Prisma.
+export interface Ticker {
+  symbol: string
+  price: number
+  change: number // Percentage change
+  changeDirection?: "up" | "down" | "neutral" // For visual cue if needed
+}
+
+export interface NewsArticle {
+  id: string
+  headline: string
+  source: string
+  timestamp: string
+  snippet: string
+  relatedTickers: string[] // Array of ticker symbols
+  sentiment: "positive" | "neutral" | "negative"
+  sentimentScore: number // e.g., 0.0 to 1.0 for positive, -1.0 to 0.0 for negative
+}
+
+export interface DashboardData {
+  news: NewsArticle[]
+  topTickers: Ticker[]
+}
+
+
 export type User = {
   id: string;
   name: string;
