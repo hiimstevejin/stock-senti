@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { TextEffectPerLine } from "@/components/hero/text-effect";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
@@ -81,72 +82,72 @@ export function HeroSection() {
               <div className="relative py-6 md:w-[calc(100%-11rem)]">
                 <InfiniteSlider gap={112}>
                   <div className="flex">
-                    <img
+                    <Image
                       className="mx-auto h-12 w-fit dark:invert"
                       src="/icons/microsoft.svg"
                       alt="Microsoft Logo"
                       height="20"
-                      width="auto"
+                      width="50"
                     />
                   </div>
 
                   <div className="flex">
-                    <img
+                    <Image
                       className="mx-auto h-12 w-fit dark:invert"
                       src="/icons/nvidia.svg"
                       alt="Nvidia Logo"
                       height="20"
-                      width="auto"
+                      width="50"
                     />
                   </div>
 
                   <div className="flex">
-                    <img
+                    <Image
                       className="mx-auto h-12 w-fit dark:invert"
                       src="/icons/apple.svg"
                       alt="Apple Logo"
                       height="20"
-                      width="auto"
+                      width="50"
                     />
                   </div>
 
                   <div className="flex">
-                    <img
+                    <Image
                       className="mx-auto h-12 w-fit dark:invert"
                       src="/icons/amazon.svg"
                       alt="Amazon Logo"
                       height="20"
-                      width="auto"
+                      width="50"
                     />
                   </div>
 
                   <div className="flex">
-                    <img
+                    <Image
                       className="mx-auto h-12 w-fit dark:invert"
                       src="/icons/google.svg"
                       alt="Google Logo"
                       height="20"
-                      width="auto"
+                      width="50"
                     />
                   </div>
 
                   <div className="flex">
-                    <img
+                    <Image
                       className="mx-auto h-12 w-fit dark:invert"
                       src="/icons/meta.svg"
                       alt="Meta Logo"
                       height="20"
-                      width="auto"
+                      width="50"
                     />
                   </div>
 
                   <div className="flex">
-                    <img
+                    <Image
                       className="mx-auto h-12 w-fit dark:invert"
                       src="/icons/tesla.svg"
                       alt="Tesla Logo"
                       height="20"
-                      width="auto"
+                      width="50"
                     />
                   </div>
                 </InfiniteSlider>
@@ -195,10 +196,12 @@ const HeroHeader = () => {
                 aria-label="home"
                 className="flex items-center space-x-2"
               >
-                <img
+                <Image
                   src="/icons/signalfeed.svg"
                   alt="SignalFeed Logo"
                   className="h-12 w-auto"
+                  height={50}
+                  width={50}
                 />
               </Link>
 
