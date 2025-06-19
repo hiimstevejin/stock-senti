@@ -512,4 +512,11 @@ export const placeholderData: DashboardData = {
       ],
     },
   ],
+  topTickers: [
+    { symbol: "TCORP", price: 175.3, change: 15.2, changeDirection: "up" },
+    { symbol: "IPHA", price: 92.5, change: 25.1, changeDirection: "up" },
+    { symbol: "SOLN", price: 210.75, change: 8.5, changeDirection: "up" },
+    { symbol: "GRWTH", price: 55.2, change: 7.1, changeDirection: "up" },
+    { symbol: "ENRGY", price: 120.4, change: 6.8, changeDirection: "up" },
+  ],
 };
