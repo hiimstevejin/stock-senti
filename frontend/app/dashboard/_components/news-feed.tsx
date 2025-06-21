@@ -1,7 +1,7 @@
 "use client";
 
-import type { NewsFeedData } from "@/app/dash/_types/definition";
-import NewsItemCard from "@/app/dash/_components/news-item-card";
+import type { NewsFeedData } from "@/app/dashboard/_types/definition";
+import NewsItemCard from "@/app/dashboard/_components/news-item-card";
 
 export function NewsFeed({
   news,

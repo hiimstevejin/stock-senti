@@ -1,4 +1,4 @@
-import type { DashboardData } from "@/app/dash/_types/definition";
+import type { DashboardData } from "@/app/dashboard/_types/definition";
 
 export const placeholderData: DashboardData = {
   news: [

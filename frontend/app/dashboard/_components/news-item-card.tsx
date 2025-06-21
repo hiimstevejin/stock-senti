@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import type { NewsItemCardData } from "@/app/dash/_types/definition";
+import type { NewsItemCardData } from "@/app/dashboard/_types/definition";
 import {
   Card,
   CardHeader,
@@ -13,16 +13,15 @@ import {
 } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { ExternalLink } from "lucide-react";
-import { TickerBadge } from "@/app/dash/_components/ticker-badge";
+import { TickerBadge } from "@/app/dashboard/_components/ticker-badge";
 import { cn } from "@/lib/utils";
-
 
 export default function NewsItemCard({
   article,
   isSelected,
   onSelect,
 }: NewsItemCardData) {
-    const [imgError, setImgError] = useState(false);
+  const [imgError, setImgError] = useState(false);
   const handleCardClick = (e: React.MouseEvent<HTMLDivElement>) => {
     // Prevent selection if clicking on the "View Article" button
     if ((e.target as HTMLElement).closest("a[data-view-article='true']")) {
@@ -63,16 +62,16 @@ export default function NewsItemCard({
           </CardContent>
         </div>
 
-       {article.banner_image && !imgError ? (
-        <img
-          className="m-1 h-[150px] w-[250px] rounded-xl flex-shrink-0"
-          src={article.banner_image}
-          alt=""
-          onError={() => setImgError(true)}
-        />
-      ) : (
-        <Skeleton className="m-1 h-[150px] w-[250px] rounded-xl flex-shrink-0" />
-      )}
+        {article.banner_image && !imgError ? (
+          <img
+            className="m-1 h-[150px] w-[250px] rounded-xl flex-shrink-0"
+            src={article.banner_image}
+            alt=""
+            onError={() => setImgError(true)}
+          />
+        ) : (
+          <Skeleton className="m-1 h-[150px] w-[250px] rounded-xl flex-shrink-0" />
+        )}
       </div>
       <CardFooter className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 pb-3 pt-2 px-4">
         <div className="flex flex-wrap gap-1">

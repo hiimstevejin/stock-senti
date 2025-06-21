@@ -1,5 +1,10 @@
-import type { Ticker } from "@/app/dash/_types/definition";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import type { Ticker } from "@/app/dashboard/_types/definition";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardContent,
+} from "@/components/ui/card";
 import { TrendingUp, ArrowUp, ArrowDown, Minus } from "lucide-react";
 import { cn } from "@/lib/utils";
 

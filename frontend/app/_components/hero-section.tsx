@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { TextEffectPerLine } from "@/app/hero/_components/text-effect-perline";
-import { InfiniteSlider } from "@/app/hero/_components/infinite-slider";
-import { ProgressiveBlur } from "@/app/hero/_components/progressive-blur";
-import HeroNavbar from "./hero-navbar";
+import { TextEffectPerLine } from "@/app/_components/text-effect-perline";
+import { InfiniteSlider } from "@/app/_components/infinite-slider";
+import { ProgressiveBlur } from "@/app/_components/progressive-blur";
+import HeroNavbar from "@/app/_components/hero-navbar";
 
 export function HeroSection() {
   return (

@@ -1,5 +1,10 @@
-import type { NewsArticle } from "@/app/dash/_types/definition";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import type { NewsArticle } from "@/app/dashboard/_types/definition";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardContent,
+} from "@/components/ui/card";
 import { Smile, Meh, Frown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
