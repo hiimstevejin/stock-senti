@@ -14,6 +14,7 @@ stock-senti.vercel.app
 - [Getting Started](#getting-started)
 - [Tech Stack](#tech-stack)
 - [License](#license)
+- [Dev](#Dev)
 - [Contact](#contact)
 
 ---
@@ -39,6 +40,10 @@ stock-senti.vercel.app
 ---
 
 ## License
+
+---
+
+## Dev
 
 ---
 
