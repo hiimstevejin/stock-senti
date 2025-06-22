@@ -32,14 +32,17 @@ class NewsAnalyzer:
             }  # Mock sentiment for testing
             analyzed_article = NewsArticle(
                 title=article["title"],
+                summary=article["summary"],
                 source=article["source"],
+                banner_image = article["banner_image"],
                 published_at=datetime.strptime(
                     article["time_published"], "%Y%m%dT%H%M%S"
                 ),
-                raw_sentiment=article["ticker_sentiment"],
+                overall_sentiment_score= article["overall_sentiment_score"],
+                overall_sentiment_label=article["overall_sentiment_label"],
+                ticker_sentiment=article["ticker_sentiment"],
                 bert_sentiment=sentiment,
             )
-            print("Created NewsArticle:", analyzed_article)  # Add this line
             analyzed_articles.append(analyzed_article)
 
         return analyzed_articles
