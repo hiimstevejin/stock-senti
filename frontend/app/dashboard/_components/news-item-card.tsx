@@ -75,8 +75,8 @@ export default function NewsItemCard({
       </div>
       <CardFooter className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 pb-3 pt-2 px-4">
         <div className="flex flex-wrap gap-1">
-          {article.ticker_sentiment.map((tickerObj) => (
-            <TickerBadge key={tickerObj.ticker} symbol={tickerObj.ticker} />
+          {article.tickers.map((tickerObj) => (
+            <TickerBadge key={tickerObj.symbol} symbol={tickerObj.symbol} />
           ))}
         </div>
         <Button

@@ -1,4 +1,4 @@
-import type { Ticker } from "@/app/dashboard/_types/definition";
+import type { TopTicker } from "@/app/dashboard/_types/definition";
 import {
   Card,
   CardHeader,
@@ -8,7 +8,7 @@ import {
 import { TrendingUp, ArrowUp, ArrowDown, Minus } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export function TopTickers({ tickers }: { tickers: Ticker[] }) {
+export function TopTickers({ tickers }: { tickers: TopTicker[] }) {
   return (
     <section className="lg:col-span-1 min-h-[180px] md:h-auto md:max-h-full flex flex-col flex-grow">
       <h2 className="text-sm font-semibold text-neutral-300 mb-2 px-1">
