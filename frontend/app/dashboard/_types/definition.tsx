@@ -17,7 +17,7 @@ export interface NewsArticle {
   time_published: string;
   authors: string[];
   summary: string;
-  banner_image?: string | null;
+  banner_image?: string;
   source: string;
   url: string;
   overall_sentiment_score: number;
