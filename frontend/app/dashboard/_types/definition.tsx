@@ -29,7 +29,8 @@ export interface NewsArticle {
 // Type definition for dashboard data
 export interface DashboardData {
   news: NewsArticle[];
-  topTickers: TopTicker[];
+  topTickers: TopGainer[];
+  bottomTickers: TopLoser[];
 }
 
 // Type definition for NewsFeed data
@@ -55,9 +56,20 @@ export interface SentimentGauge {
 }
 
 // Type definitions to use inside TopTicker
-export interface TopTicker {
+export interface TopGainer {
   symbol: string;
   price: number;
   change: number; // Percentage change
-  changeDirection?: "up" | "down" | "neutral"; // For visual cue if needed
+  change_percentage: string;
+  volume: number;
+  changeDirection?: "up" | "down" | "neutral"; 
+}
+
+export interface TopLoser {
+  symbol: string;
+  price: number;
+  change: number; // Percentage change
+  change_percentage: string;
+  volume: number;
+  changeDirection?: "up" | "down" | "neutral";
 }

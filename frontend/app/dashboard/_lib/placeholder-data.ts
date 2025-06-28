@@ -512,7 +512,7 @@ export const placeholderData: DashboardData = {
       ],
     },
   ],
-  topTickers: [
+  topGainer: [
     { symbol: "TCORP", price: 175.3, change: 15.2, changeDirection: "up" },
     { symbol: "IPHA", price: 92.5, change: 25.1, changeDirection: "up" },
     { symbol: "SOLN", price: 210.75, change: 8.5, changeDirection: "up" },
