@@ -2,12 +2,11 @@
 
 import { useState, useMemo } from "react";
 import { NewsFeed } from "@/app/dashboard/_components/news-feed";
-import { TopTickers } from "@/app/dashboard/_components/top-tickers";
+import { TopMoversBlock } from "./top-movers";
 import { SentimentGauge } from "@/app/dashboard/_components/sentiment-guage";
-import { NewsArticle } from "../_types/definition";
-import { placeholderData } from "../_lib/placeholder-data";
+import { NewsArticle, TopMovers } from "../_types/definition";
 
-export default function DashboardClient({ news }: { news: NewsArticle[] }) {
+export default function DashboardClient({ news,topMovers }: { news: NewsArticle[],topMovers: TopMovers }) {
   const [selectedArticleId, setSelectedArticleId] = useState<number | null>(
     news.length > 0 ? news[0].id : null
   );
@@ -31,7 +30,7 @@ export default function DashboardClient({ news }: { news: NewsArticle[] }) {
 
       <aside className="flex-shrink-0 md:col-span-1 lg:col-span-2 grid grid-cols-1 lg:grid-cols-2 gap-4 md:h-full md:max-h-[calc(100vh-100px)] overflow-hidden">
         {/* Top Ticker feed */}
-        <TopTickers tickers={placeholderData.topTickers} />
+        <TopMoversBlock topMovers={topMovers} />
         {/* Sentiment Guage feed */}
         <SentimentGauge article={selectedArticle} />
       </aside>

@@ -1,0 +1,327 @@
+{
+  "date": "2025-06-27",
+  "top_gainers": [
+    {
+      "ticker_symbol": "BGLWW",
+      "price": 0.31,
+      "change_amount": 0.23,
+      "change_percentage": "287.5%",
+      "volume": 1802352,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "LCFY",
+      "price": 8.3,
+      "change_amount": 5.77,
+      "change_percentage": "228.0632%",
+      "volume": 95106753,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "BGL",
+      "price": 62.5,
+      "change_amount": 40.53,
+      "change_percentage": "184.4788%",
+      "volume": 383156,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "NXLIW",
+      "price": 0.07,
+      "change_amount": 0.0399,
+      "change_percentage": "132.5581%",
+      "volume": 500,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "RCT",
+      "price": 3.24,
+      "change_amount": 1.82,
+      "change_percentage": "128.169%",
+      "volume": 77283705,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "SERA",
+      "price": 4.09,
+      "change_amount": 2.11,
+      "change_percentage": "106.5657%",
+      "volume": 7421788,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "JVSAU",
+      "price": 12.01,
+      "change_amount": 5.07,
+      "change_percentage": "73.0548%",
+      "volume": 12226,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "AMIX",
+      "price": 2.01,
+      "change_amount": 0.76,
+      "change_percentage": "60.8%",
+      "volume": 42360232,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "TGE+",
+      "price": 0.5568,
+      "change_amount": 0.1968,
+      "change_percentage": "54.6667%",
+      "volume": 61630,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "RILYP",
+      "price": 2.33,
+      "change_amount": 0.75,
+      "change_percentage": "47.4684%",
+      "volume": 182962,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "LIDRW",
+      "price": 0.0751,
+      "change_amount": 0.0233,
+      "change_percentage": "44.9807%",
+      "volume": 243381,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "STSSW",
+      "price": 0.032,
+      "change_amount": 0.0098,
+      "change_percentage": "44.1441%",
+      "volume": 73882,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "PSFE+",
+      "price": 0.0198,
+      "change_amount": 0.006,
+      "change_percentage": "43.4783%",
+      "volume": 196902,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "POLEW",
+      "price": 0.26,
+      "change_amount": 0.0779,
+      "change_percentage": "42.7787%",
+      "volume": 863,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "SOND",
+      "price": 2.27,
+      "change_amount": 0.67,
+      "change_percentage": "41.875%",
+      "volume": 4584388,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "CREVW",
+      "price": 0.0249,
+      "change_amount": 0.0073,
+      "change_percentage": "41.4773%",
+      "volume": 1708,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "ODYS",
+      "price": 7.01,
+      "change_amount": 2.04,
+      "change_percentage": "41.0463%",
+      "volume": 35795,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "FVNNR",
+      "price": 0.17,
+      "change_amount": 0.0489,
+      "change_percentage": "40.3799%",
+      "volume": 6800,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "SVRE",
+      "price": 3.19,
+      "change_amount": 0.9,
+      "change_percentage": "39.3013%",
+      "volume": 45968988,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "EYEN",
+      "price": 10.88,
+      "change_amount": 2.99,
+      "change_percentage": "37.8961%",
+      "volume": 6003839,
+      "last_updated": "2025-06-27"
+    }
+  ],
+  "top_losers": [
+    {
+      "ticker_symbol": "LIMNW",
+      "price": 0.175,
+      "change_amount": -0.185,
+      "change_percentage": "-51.3889%",
+      "volume": 343902,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "CLNNW",
+      "price": 0.022,
+      "change_amount": -0.022,
+      "change_percentage": "-50.0%",
+      "volume": 64200,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "DAIC",
+      "price": 8.67,
+      "change_amount": -7.76,
+      "change_percentage": "-47.2307%",
+      "volume": 397775,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "OTRK",
+      "price": 0.5534,
+      "change_amount": -0.4201,
+      "change_percentage": "-43.1536%",
+      "volume": 3252028,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "LIMN",
+      "price": 9.48,
+      "change_amount": -7.12,
+      "change_percentage": "-42.8916%",
+      "volume": 651654,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "GNLN",
+      "price": 3.08,
+      "change_amount": -2.1713,
+      "change_percentage": "-41.3479%",
+      "volume": 1056023,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "BARK+",
+      "price": 0.012,
+      "change_amount": -0.0083,
+      "change_percentage": "-40.8867%",
+      "volume": 386001,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "PMNT",
+      "price": 0.252,
+      "change_amount": -0.172,
+      "change_percentage": "-40.566%",
+      "volume": 5070865,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "UKOMW",
+      "price": 0.0056,
+      "change_amount": -0.0038,
+      "change_percentage": "-40.4255%",
+      "volume": 30304,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "WFF",
+      "price": 3.99,
+      "change_amount": -2.65,
+      "change_percentage": "-39.9096%",
+      "volume": 26190412,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "OUSTW",
+      "price": 0.032,
+      "change_amount": -0.02,
+      "change_percentage": "-38.4615%",
+      "volume": 72115,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "BULLZ",
+      "price": 0.82,
+      "change_amount": -0.51,
+      "change_percentage": "-38.3459%",
+      "volume": 656289,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "HSDT",
+      "price": 0.211,
+      "change_amount": -0.1289,
+      "change_percentage": "-37.9229%",
+      "volume": 13477692,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "ACHV",
+      "price": 2.23,
+      "change_amount": -1.28,
+      "change_percentage": "-36.4672%",
+      "volume": 12130426,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "OST",
+      "price": 0.3497,
+      "change_amount": -0.2003,
+      "change_percentage": "-36.4182%",
+      "volume": 128382889,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "KLTO",
+      "price": 0.7201,
+      "change_amount": -0.4099,
+      "change_percentage": "-36.2743%",
+      "volume": 7959540,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "AEMD",
+      "price": 1.25,
+      "change_amount": -0.69,
+      "change_percentage": "-35.567%",
+      "volume": 969544,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "CHEB+",
+      "price": 0.0526,
+      "change_amount": -0.029,
+      "change_percentage": "-35.5392%",
+      "volume": 51007,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "LEXXW",
+      "price": 0.11,
+      "change_amount": -0.06,
+      "change_percentage": "-35.2941%",
+      "volume": 200,
+      "last_updated": "2025-06-27"
+    },
+    {
+      "ticker_symbol": "ATIIW",
+      "price": 0.28,
+      "change_amount": -0.152,
+      "change_percentage": "-35.1852%",
+      "volume": 19722,
+      "last_updated": "2025-06-27"
+    }
+  ]
+}

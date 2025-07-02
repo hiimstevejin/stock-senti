@@ -55,21 +55,24 @@ export interface SentimentGauge {
   ticker_sentiment: Ticker[];
 }
 
+export interface TopMovers{
+  date: string;
+  top_gainers: TopGainer[]
+  top_losers: TopLoser[]
+}
 // Type definitions to use inside TopTicker
 export interface TopGainer {
-  symbol: string;
+  ticker_symbol: string;
   price: number;
-  change: number; // Percentage change
+  change_amount: number; // Percentage change
   change_percentage: string;
   volume: number;
-  changeDirection?: "up" | "down" | "neutral"; 
 }
 
 export interface TopLoser {
-  symbol: string;
+  ticker_symbol: string;
   price: number;
-  change: number; // Percentage change
+  change_amount: number; // Percentage change
   change_percentage: string;
   volume: number;
-  changeDirection?: "up" | "down" | "neutral";
 }

@@ -8,8 +8,15 @@ async function getNews() {
   return res.json();
 }
 
+async function getTopMovers() {
+  const res = await fetch(`${API_URL}/api/news/topmovers-latest`);
+  if (!res.ok) throw new Error("Failed to fetch top movers");
+  return res.json();
+}
+
 export default async function DashboardPage() {
   const news = await getNews();
+  const topMovers = await getTopMovers();
 
-  return <DashboardClient news={news} />;
+  return <DashboardClient news={news} topMovers={topMovers} />;
 }
