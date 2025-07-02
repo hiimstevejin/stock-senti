@@ -17,7 +17,7 @@ export default function DashboardClient({ news,topMovers }: { news: NewsArticle[
 
   const selectedArticle = useMemo(() => {
     return news.find((article) => article.id === selectedArticleId) || null;
-  }, [selectedArticleId]);
+  }, [selectedArticleId,news]);
 
   return (
     <main className="flex flex-col-reverse md:grid md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 overflow-hidden">
