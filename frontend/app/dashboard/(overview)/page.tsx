@@ -1,43 +1,22 @@
-"use client";
+import DashboardClient from "../_components/dashboard-client";
 
-import { useState, useMemo } from "react";
-import { NewsFeed } from "@/app/dashboard/_components/news-feed";
-import { TopTickers } from "@/app/dashboard/_components/top-tickers";
-import { SentimentGauge } from "@/app/dashboard/_components/sentiment-guage";
-import { placeholderData } from "../_lib/placeholder-data";
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
-export default function Page() {
-  const [selectedArticleId, setSelectedArticleId] = useState<string | null>(
-    placeholderData.news.length > 0 ? placeholderData.news[0].title : null
-  );
+async function getLatestNews() {
+  const res = await fetch(`${API_URL}/api/news/latest`, { cache: "no-store" });
+  if (!res.ok) throw new Error("Failed to fetch latest news");
+  return res.json();
+}
 
-  const handleSelectArticle = (articleId: string) => {
-    setSelectedArticleId(articleId);
-  };
+async function getTopMovers() {
+  const res = await fetch(`${API_URL}/api/news/topmovers-latest`);
+  if (!res.ok) throw new Error("Failed to fetch top movers");
+  return res.json();
+}
 
-  const selectedArticle = useMemo(() => {
-    return (
-      placeholderData.news.find(
-        (article) => article.title === selectedArticleId
-      ) || null
-    );
-  }, [selectedArticleId]);
+export default async function DashboardPage() {
+  const latestNews = await getLatestNews();
+  const topMovers = await getTopMovers();
 
-  return (
-    <main className="flex flex-col-reverse md:grid md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 overflow-hidden">
-      {/* News Feed */}
-      <NewsFeed
-        news={placeholderData.news}
-        selectedArticleId={selectedArticleId}
-        onSelectArticle={handleSelectArticle}
-      />
-
-      <aside className="flex-shrink-0 md:col-span-1 lg:col-span-2 grid grid-cols-1 lg:grid-cols-2 gap-4 md:h-full md:max-h-[calc(100vh-100px)] overflow-hidden">
-        {/* Top Ticker feed */}
-        <TopTickers tickers={placeholderData.topTickers} />
-        {/* Sentiment Guage feed */}
-        <SentimentGauge article={selectedArticle} />
-      </aside>
-    </main>
-  );
+  return <DashboardClient news={latestNews["news"]} topMovers={topMovers} />;
 }

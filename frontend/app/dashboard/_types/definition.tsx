@@ -1,43 +1,43 @@
 // News Article type
+export interface Topic {
+  name: string;
+  relevance_score: string;
+}
+
+export interface Ticker {
+  symbol: string;
+  sentiment_score: number;
+  relevance_score: number;
+  sentiment_label: string;
+}
+
 export interface NewsArticle {
+  id: number;
   title: string;
-  url: string;
   time_published: string;
   authors: string[];
   summary: string;
-  banner_image?: string | null;
+  banner_image?: string;
   source: string;
-  category_within_source: string;
-  source_domain: string;
-  topics: Topic[];
+  url: string;
   overall_sentiment_score: number;
   overall_sentiment_label: string;
-  ticker_sentiment: TickerSentiment[];
-}
-
-export interface Topic {
-  topic: string;
-  relevance_score: string;
-}
-
-export interface TickerSentiment {
-  ticker: string;
-  relevance_score: string;
-  ticker_sentiment_score: string;
-  ticker_sentiment_label: string;
+  topics: Topic[];
+  tickers: Ticker[];
 }
 
 // Type definition for dashboard data
 export interface DashboardData {
   news: NewsArticle[];
-  topTickers: Ticker[];
+  topTickers: TopGainer[];
+  bottomTickers: TopLoser[];
 }
 
 // Type definition for NewsFeed data
 export interface NewsFeedData {
   news: NewsArticle[];
-  selectedArticleId: string | null;
-  onSelectArticle: (articleId: string) => void;
+  selectedArticleId: number | null;
+  onSelectArticle: (articleId: number) => void;
 }
 
 // Type definition for NewsItemCard data
@@ -52,13 +52,27 @@ export interface SentimentGauge {
   title: string;
   overall_sentiment_score: number;
   overall_sentiment_label: string;
-  ticker_sentiment: TickerSentiment[];
+  ticker_sentiment: Ticker[];
 }
 
+export interface TopMovers{
+  date: string;
+  top_gainers: TopGainer[]
+  top_losers: TopLoser[]
+}
 // Type definitions to use inside TopTicker
-export interface Ticker {
-  symbol: string;
+export interface TopGainer {
+  ticker_symbol: string;
   price: number;
-  change: number; // Percentage change
-  changeDirection?: "up" | "down" | "neutral"; // For visual cue if needed
+  change_amount: number; // Percentage change
+  change_percentage: string;
+  volume: number;
+}
+
+export interface TopLoser {
+  ticker_symbol: string;
+  price: number;
+  change_amount: number; // Percentage change
+  change_percentage: string;
+  volume: number;
 }

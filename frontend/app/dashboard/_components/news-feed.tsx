@@ -17,10 +17,10 @@ export function NewsFeed({
         <div className="space-y-3 overflow-y-auto h-full px-1 pt-2">
           {news.map((article) => (
             <NewsItemCard
-              key={article.title}
+              key={article.id}
               article={article}
-              isSelected={selectedArticleId === article.title}
-              onSelect={() => onSelectArticle(article.title)}
+              isSelected={selectedArticleId === article.id}
+              onSelect={() => onSelectArticle(article.id)}
             />
           ))}
         </div>
