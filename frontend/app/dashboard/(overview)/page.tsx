@@ -2,9 +2,9 @@ import DashboardClient from "../_components/dashboard-client";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
-async function getNews() {
-  const res = await fetch(`${API_URL}/api/news`, { cache: "no-store" });
-  if (!res.ok) throw new Error("Failed to fetch news");
+async function getLatestNews() {
+  const res = await fetch(`${API_URL}/api/news/latest`, { cache: "no-store" });
+  if (!res.ok) throw new Error("Failed to fetch latest news");
   return res.json();
 }
 
@@ -15,8 +15,8 @@ async function getTopMovers() {
 }
 
 export default async function DashboardPage() {
-  const news = await getNews();
+  const latestNews = await getLatestNews();
   const topMovers = await getTopMovers();
 
-  return <DashboardClient news={news} topMovers={topMovers} />;
+  return <DashboardClient news={latestNews["news"]} topMovers={topMovers} />;
 }
