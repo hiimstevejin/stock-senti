@@ -5,7 +5,11 @@ Your personal assistant that helps you make investment decisions
 StockSenti is a sentiment-driven stock analysis tool that uses machine learning models trained on financial news to deliver market predictions and relevant news insights.
 
 ## 🔗 Link
-stock-senti.vercel.app
+
+<a href="stock-senti.vercel.app">Main Page</a>
+<a href="stock-senti.vercel.app/dashboard">Dashboard</a>
+<a href="https://github.com/hiimstevejin/stock-senti-backend">Backend repository</a>
+
 ---
 
 ## Table of Contents
@@ -19,6 +23,10 @@ stock-senti.vercel.app
 ---
 
 ## Features
+Dashboard shows
+- news article from the most recent business day
+- top gainers and top losers from the most recent business day
+- sentiment gauge that shows the overall sentiment of the article
 
 ---
 
@@ -28,20 +36,25 @@ stock-senti.vercel.app
 
 ## Getting Started
 
-### Prerequesites
-
-### Setup Instructions
+- clone this project
+- npm install
+- npm run dev 
 
 ---
 
 ## Tech Stack
+- Next.js frontend, deployed on vercel
+- Django backend, deployed on render
+- TensorFlow NLP to generate sentiment score using finBERT
 
 ---
 
 ## License
 
+MIT License
+
 ---
 
 ## Contact
-created by Sungyun Jin
-email: jingle5695@gmail.com
+created by Sungyun(Steve) Jin
+email: jinjer5695@gmail.com
