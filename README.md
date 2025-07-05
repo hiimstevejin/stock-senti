@@ -6,8 +6,8 @@ StockSenti is a sentiment-driven stock analysis tool that uses machine learning 
 
 ## 🔗 Link
 
-<a href="stock-senti.vercel.app">Main Page</a>
-<a href="stock-senti.vercel.app/dashboard">Dashboard</a>
+<a href="https://stock-senti.vercel.app">Main Page</a>
+<a href="https://stock-senti.vercel.app/dashboard">Dashboard</a>
 <a href="https://github.com/hiimstevejin/stock-senti-backend">Backend repository</a>
 
 ---
