@@ -25,7 +25,7 @@ export function HeroSection() {
                 </TextEffectPerLine>
                 <div className="mt-12 flex flex-col items-center justify-center gap-2 sm:flex-row lg:justify-start">
                   <Button asChild size="lg" className="px-5 text-base">
-                    <Link href="/login">
+                    <Link href="/dashboard">
                       <span className="text-nowrap">Start Investing</span>
                     </Link>
                   </Button>
